@@ -1,0 +1,32 @@
+{
+  "name": "clear-auto",
+  "version": "0.0.1",
+  "main": "./dist/extension.js",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "activationEvents": [
+    "onLanguage:cpp"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "description": "Overlay C++ auto declarations as function or var, classified by clangd",
+  "displayName": "Clear Auto",
+  "engines": {
+    "vscode": "^1.140.0"
+  },
+  "extensionDependencies": [
+    "llvm-vs-code-extensions.vscode-clangd"
+  ],
+  "icon": "images/icon.png",
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "esbuild src/extension.js --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --sourcemap",
+    "package": "npm run compile"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "lodash.range": "^3.2.0"
+  }
+}
