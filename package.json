@@ -1,6 +1,6 @@
 {
   "name": "clear-auto",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./dist/extension.js",
   "devDependencies": {
     "esbuild": "^0.28.2"
@@ -9,9 +9,13 @@
     "onLanguage:cpp"
   ],
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "description": "Overlay C++ auto declarations as function or var, classified by clangd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/secretqsan/clear-auto.git"
+  },
   "displayName": "Clear Auto",
   "engines": {
     "vscode": "^1.140.0"
