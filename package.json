@@ -1,6 +1,7 @@
 {
   "name": "clear-auto",
-  "version": "1.0.0",
+  "publisher": "secretqsan",
+  "version": "1.0.1",
   "main": "./dist/extension.js",
   "devDependencies": {
     "esbuild": "^0.28.2"
@@ -18,7 +19,7 @@
   },
   "displayName": "Clear Auto",
   "engines": {
-    "vscode": "^1.140.0"
+    "vscode": "^1.0.0"
   },
   "extensionDependencies": [
     "llvm-vs-code-extensions.vscode-clangd"
